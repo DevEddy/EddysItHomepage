@@ -1,6 +1,6 @@
 {
-  "name": "EddysItHomepage",
-  "short_name": "EddysItHomepage",
+  "name": "Eddys IT",
+  "short_name": "Eddys IT",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
