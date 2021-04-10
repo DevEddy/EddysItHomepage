@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EddysItHomepage.Server", "Server\EddysItHomepage.Server.csproj", "{A5A021B6-E680-46EA-A601-1271EB6D6B88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EddysItHomepage.Server", "Server\EddysItHomepage.Server.csproj", "{A5A021B6-E680-46EA-A601-1271EB6D6B88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EddysItHomepage.Client", "Client\EddysItHomepage.Client.csproj", "{1CDE2378-184E-4353-BE6F-14E5BA7DFFCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EddysItHomepage.Client", "Client\EddysItHomepage.Client.csproj", "{1CDE2378-184E-4353-BE6F-14E5BA7DFFCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EddysItHomepage.Shared", "Shared\EddysItHomepage.Shared.csproj", "{3746D7D2-F60C-47AF-A0F7-091E753AF1F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EddysItHomepage.Shared", "Shared\EddysItHomepage.Shared.csproj", "{3746D7D2-F60C-47AF-A0F7-091E753AF1F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
