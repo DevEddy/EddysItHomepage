@@ -1,10 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>9adbcf85-e716-4ace-af46-40c02b2606ab</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileTag>eddys-it-homepage</DockerfileTag>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
