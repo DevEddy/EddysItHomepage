@@ -1,3 +1,4 @@
+using System.IO;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Hosting;
@@ -6,6 +7,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Linq;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.FileProviders;
 
 namespace EddysItHomepage.Server
 {
@@ -44,12 +47,18 @@ namespace EddysItHomepage.Server
 
             app.UseHttpsRedirection();
             app.UseBlazorFrameworkFiles();
-            app.UseStaticFiles();
-
+            // to allow access to apple-app-site-association file
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, @".well-known")),
+                RequestPath = new PathString("/.well-known"),
+                DefaultContentType = "application/json",
+                ServeUnknownFileTypes = true,
+            });
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
-            {
+            {        
                 endpoints.MapRazorPages();
                 endpoints.MapControllers();
                 endpoints.MapFallbackToFile("index.html");

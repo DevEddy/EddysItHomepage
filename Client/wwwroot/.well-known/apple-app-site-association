@@ -1,0 +1,15 @@
+{
+   "applinks": {
+     "apps": [],
+     "details": [
+       {
+         "appID": "N258Y98548.it.eddys.yasl",
+         "paths": [ "/yasl/*"]
+       },
+       {
+         "appID": "N258Y98548.it.eddys.yasl",
+         "paths": [ "*" ]
+       }
+     ]
+   }
+}
