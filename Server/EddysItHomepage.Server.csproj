@@ -5,7 +5,7 @@
     <UserSecretsId>9adbcf85-e716-4ace-af46-40c02b2606ab</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileTag>eddys-it-homepage</DockerfileTag>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
