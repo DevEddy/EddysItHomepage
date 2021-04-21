@@ -48,13 +48,7 @@ namespace EddysItHomepage.Server
             app.UseHttpsRedirection();
             app.UseBlazorFrameworkFiles();
             // to allow access to apple-app-site-association file
-            app.UseStaticFiles(new StaticFileOptions()
-            {
-                FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, @".well-known")),
-                RequestPath = new PathString("/.well-known"),
-                DefaultContentType = "application/json",
-                ServeUnknownFileTypes = true,
-            });
+            app.UseStaticFiles();
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>

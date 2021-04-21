@@ -9,9 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include=".well-known\apple-app-site-association">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <None Include="apple-app-site-association.json" />
   </ItemGroup>
 
   <ItemGroup>
