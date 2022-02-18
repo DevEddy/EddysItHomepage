@@ -1,0 +1,10 @@
+[
+  {
+    "relation": [ "delegate_permission/common.handle_all_urls" ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "it.eddys.yasl",
+      "sha256_cert_fingerprints": [ "E4:28:D6:BD:05:AE:46:C2:B3:3F:35:4A:4B:30:23:6C:C3:B0:34:AC:87:3D:9E:F6:49:3F:31:F4:32:0E:B0:55" ]
+    }
+  }
+]

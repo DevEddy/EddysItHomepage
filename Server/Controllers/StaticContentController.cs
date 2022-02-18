@@ -20,5 +20,20 @@ namespace EddysItHomepage.Server.Controllers
         {
             return AppleAppSiteAssociationWellKnown();
         }
+        [HttpGet]
+        [Route(".well-known/assetlinks")]
+        public ContentResult AssetLinksWellKnown()
+        {
+            // source in root of wwwroot folder
+            const string source = @"assetlinks.json";
+            var json = System.IO.File.ReadAllText(source);
+            return Content(json, "application/json", Encoding.UTF8);
+        }
+        [HttpGet]
+        [Route("assetlinks")]
+        public ContentResult AssetLinks()
+        {
+            return AssetLinksWellKnown();
+        }
     }
 }

@@ -5,10 +5,15 @@
     <UserSecretsId>9adbcf85-e716-4ace-af46-40c02b2606ab</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileTag>eddys-it-homepage</DockerfileTag>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="assetlinks.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="assetlinks.json" />
     <None Include="apple-app-site-association.json" />
   </ItemGroup>
 
