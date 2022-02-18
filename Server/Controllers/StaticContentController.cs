@@ -30,6 +30,18 @@ namespace EddysItHomepage.Server.Controllers
             return Content(json, "application/json", Encoding.UTF8);
         }
         [HttpGet]
+        [Route(".well-known/assetlinks.json")]
+        public ContentResult AssetLinksWellKnownJson()
+        {
+            return AssetLinksWellKnown();
+        }
+        [HttpGet]
+        [Route("assetlinks.json")]
+        public ContentResult AssetLinksJson()
+        {
+            return AssetLinksWellKnown();
+        }
+        [HttpGet]
         [Route("assetlinks")]
         public ContentResult AssetLinks()
         {
