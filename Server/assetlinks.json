@@ -4,9 +4,10 @@
     "target": {
       "namespace": "android_app",
       "package_name": "it.eddys.yasl",
-      "sha256_cert_fingerprints": [        
+      "sha256_cert_fingerprints": [
         "E4:28:D6:BD:05:AE:46:C2:B3:3F:35:4A:4B:30:23:6C:C3:B0:34:AC:87:3D:9E:F6:49:3F:31:F4:32:0E:B0:55",
-        "06:0F:D0:97:C5:8D:84:8B:DC:DD:2C:53:65:89:E4:5F:7E:76:8E:FA:5F:10:5E:0F:14:02:D2:E7:2E:2A:F7:FD"
+        "06:0F:D0:97:C5:8D:84:8B:DC:DD:2C:53:65:89:E4:5F:7E:76:8E:FA:5F:10:5E:0F:14:02:D2:E7:2E:2A:F7:FD",
+        "DF:29:53:1F:6A:7C:80:FA:AF:7D:62:96:0E:54:FB:A1:73:4F:E8:7F:FB:D9:3B:6C:41:BE:3B:F3:ED:F4:32:8C"
       ]
     }
   }
