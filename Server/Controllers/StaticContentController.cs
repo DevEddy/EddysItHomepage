@@ -47,5 +47,14 @@ namespace EddysItHomepage.Server.Controllers
         {
             return AssetLinksWellKnown();
         }
+
+        [HttpGet]
+        [Route(".well-known/microsoft-identity-association.json")]
+        public ContentResult MicrosoftIdentityAssociation()
+        {            
+            const string source = @"microsoft-identity-association.json";
+            var json = System.IO.File.ReadAllText(source);
+            return Content(json, "application/json", Encoding.UTF8);
+        }
     }
 }
